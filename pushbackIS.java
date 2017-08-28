@@ -33,10 +33,10 @@ public class pushbackIS {
               if(ctr==1)
             	  {
             	  System.out.println((char)i);
-            	  
+            	  push.unread(Character.toLowerCase((char)i));  
             	  }
         	  
-        	  if(i == '#') {  
+        	 /* if(i == '#') {  
                   int j;  
                   if( (j = push.read()) == '#'){  
                        System.out.print("**");  
@@ -44,9 +44,10 @@ public class pushbackIS {
                       push.unread(j);  
                       System.out.print((char)i);  
                   }  
-              }else {  
+              }*///else {  
+              else
                           System.out.print((char)i);  
-              }  
+              //}  
          }        
          bInput.reset(); 
       }
