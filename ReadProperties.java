@@ -4,14 +4,8 @@ public class ReadProperties{
 /* Resource bundle class object */
 ResourceBundle resourcebundle;
 public ReadProperties(){
- resourcebundle=ResourceBundle.getBundle
- ("Training");
- /* getting the key names present in the properties
-Java – Step by Step Lab Guide
-Wipro Technologies Page 32
- file and split w r t ',' given in the properties
- in order to get each value which is separated by
- ','*/
+ resourcebundle=ResourceBundle.getBundle("Training");
+ 
  String sType[]=resourcebundle.
  getString("Type").split(",");
  String sBu[]=resourcebundle.
